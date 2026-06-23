@@ -201,7 +201,7 @@ body > footer { margin-top: auto; }
   text-transform: uppercase;
   letter-spacing: -2px;
   line-height: 1;
-  color: #c8c8c8;
+  color: #f5f0e8;
 }
 .project-card-wide { min-height: 380px; }
 @media (min-width: 768px) {
