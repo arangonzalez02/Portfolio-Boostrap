@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Paul Rand — Galería</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-f5f5f5">
+  <a class="skip-link" href="#galeria-paul">Skip to content</a>
+
+  <div class="menu-fullscreen" id="menu">
+    <div class="d-flex justify-content-between align-items-center px-4 py-3 w-100">
+      <a href="index.html" class="fw-bold text-dark text-decoration-none" style="font-size:2.5rem;">aran</a>
+      <button class="btn-hamburger d-flex flex-column justify-content-center align-items-center border-0"
+              onclick="document.getElementById('menu').classList.remove('active')"
+              aria-label="Close">
+        <span style="transform:rotate(45deg) translateY(5.5px);background:#111;"></span>
+        <span style="opacity:0;background:#111;"></span>
+        <span style="transform:rotate(-45deg) translateY(-5.5px);background:#111;"></span>
+      </button>
+    </div>
+    <div class="mt-5 pt-4">
+      <div class="lang-switcher mb-4 px-1">
+        <button class="lang-btn" data-lang="en" aria-label="English" title="English"><span class="fi fi-gb"></span></button>
+        <button class="lang-btn" data-lang="es" aria-label="Español" title="Español"><span class="fi fi-es"></span></button>
+      </div>
+      <nav class="d-flex flex-column gap-0">
+        <a href="index.html#habilidades" onclick="document.getElementById('menu').classList.remove('active')" data-i18n="nav.about">About me</a>
+        <a href="index.html#servicios"   onclick="document.getElementById('menu').classList.remove('active')" data-i18n="nav.services">Services</a>
+        <a href="proyectos.html"         onclick="document.getElementById('menu').classList.remove('active')" data-i18n="nav.projects">Projects</a>
+        <a href="contact.html" data-i18n="nav.contact">Contact</a>
+      </nav>
+    </div>
+  </div>
+
+  <nav class="site-nav w-100 d-flex justify-content-between align-items-center px-4 py-3 w-100">
+    <a href="index.html" class="text-white text-decoration-none fw-bold fs-2">aran</a>
+
+    <div class="d-none d-lg-flex gap-4 align-items-center">
+      <a href="index.html#habilidades" class="text-white text-decoration-none small fw-medium opacity-75" data-i18n="nav.about">About me</a>
+      <a href="index.html#servicios"   class="text-white text-decoration-none small fw-medium opacity-75" data-i18n="nav.services">Services</a>
+      <a href="proyectos.html"         class="text-white text-decoration-none small fw-medium" data-i18n="nav.projects">Projects</a>
+      <div class="lang-switcher">
+        <button class="lang-btn" data-lang="en" aria-label="English" title="English"><span class="fi fi-gb"></span></button>
+        <button class="lang-btn" data-lang="es" aria-label="Español" title="Español"><span class="fi fi-es"></span></button>
+      </div>
+      <a href="contact.html" class="btn btn-outline-light rounded-pill px-3 py-1 small fw-medium" data-i18n="nav.contact">Contact</a>
+    </div>
+
+    <button class="btn-hamburger d-flex d-lg-none flex-column justify-content-center align-items-center border-0"
+            onclick="document.getElementById('menu').classList.add('active')"
+            aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <main id="galeria-paul" class="px-0">
+
+    <section class="gallery-header bg-0d0d0d text-white pt-5 pb-5">
+      <div class="container-fluid px-4 px-md-5">
+        <div class="row gx-0 gy-4 align-items-start">
+          <div class="col-12 col-lg-7">
+            <h1 class="page-heading mb-4" data-i18n="paul.title">Cartel Tipográfico</h1>
+            <p class="mb-4 text-secondary" data-i18n="paul.desc">Series inspired by Paul Rand's visual language, focusing on bold shapes and typographic hierarchy.</p>
+          </div>
+          <div class="col-12 col-lg-5">
+            <div class="gallery-meta-box w-100">
+              <ul class="gallery-meta-list mb-0">
+                <li data-i18n="paul.list.1">Poster experiments</li>
+                <li data-i18n="paul.list.2">Typographic studies</li>
+                <li data-i18n="paul.list.3">Branding references</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="row g-0 border-bottom border-dark">
+      <div class="col-12 col-md-7 border-end border-dark gallery-item" data-cat="branding">
+        <div class="gallery-card h-feat">
+          <img src="images/PAUL RAND/MOCKUP-DOBLADO.webp" alt="Paul Rand doblado" loading="lazy">
+          <div class="gallery-card-overlay always-on">
+            <span class="proj-number mb-2">01</span>
+            <h2 class="card-label mb-2">Mockup Doblado</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-5 gallery-item" data-cat="grafico branding">
+        <div class="gallery-card h-feat">
+          <img src="images/PAUL RAND/MOCKUP-CARTEL.webp" alt="Paul Rand mockup" loading="lazy">
+          <div class="gallery-card-overlay always-on">
+            <span class="proj-number mb-2">02</span>
+            <h2 class="card-label mb-2">Mockup Principal</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-0 border-bottom border-dark">
+      <div class="col-12 gallery-item" data-cat="grafico">
+        <div class="gallery-card h-mid">
+          <img src="images/PAUL RAND/CARTEL.webp" alt="Paul Rand cartel" loading="lazy">
+          <div class="gallery-card-overlay">
+            <span class="proj-number mb-1">03</span>
+            <p class="card-label mb-2">Cartel</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+  <script src="lang.js"></script>
+  <script src="scripts.js?v=3"></script>
+
+  <footer class="bg-0d0d0d">
+    <div class="container-fluid px-4 px-md-5 py-4 d-flex flex-wrap align-items-center justify-content-between gap-3">
+      <p class="text-white-50 small mb-0 footer-tagline" data-i18n="footer.tagline">Open to collaborations and new projects</p>
+      <div class="d-flex gap-2">
+        <a href="https://www.behance.net/arantxagonzalez" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary rounded-circle d-flex align-items-center justify-content-center p-0 text-white" style="width:40px;height:40px;font-size:0.7rem;font-weight:700;">Be</a>
+        <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary rounded-circle d-flex align-items-center justify-content-center p-0" style="width:40px;height:40px;">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="rgba(255,255,255,0.6)" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary rounded-circle d-flex align-items-center justify-content-center p-0" style="width:40px;height:40px;">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="rgba(255,255,255,0.6)"/></svg>
+        </a>
+      </div>
+      <a href="mailto:arantxa757402@gmail.com" class="btn btn-light rounded-pill px-4 py-2 fw-semibold" data-i18n="footer.email">Email me</a>
+    </div>
+  </footer>
+  <button class="page-back-btn" aria-label="Volver" onclick="(function(){ if(history.length>1){history.back()}else{window.location.href='proyectos-poster-editorial.html'}})()"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg></button>
+</body>
+</html>
+

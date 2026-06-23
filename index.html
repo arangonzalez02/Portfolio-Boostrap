@@ -1,0 +1,397 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Arantxa González, graphic and web designer specialised in branding, visual identity, UX/UI and social media. Based in Alcázar de San Juan, Spain.">
+  <meta name="author" content="Arantxa González">
+  <meta name="robots" content="index, follow">
+  <title>Arantxa González — Graphic & Web Designer | Portfolio</title>
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website">
+  <meta property="og:title"       content="Arantxa González — Graphic & Web Designer">
+  <meta property="og:description" content="Portfolio of Arantxa González, designer specialised in branding, UX/UI, graphic design and social media. Based in Alcázar de San Juan, Spain.">
+  <meta property="og:locale"      content="en_GB">
+  <meta property="og:site_name"   content="Arantxa González Portfolio">
+  <meta property="og:image"       content="og-image.jpg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="Arantxa González — Graphic & Web Designer">
+  <meta name="twitter:description" content="Graphic design, UX/UI and social media portfolio. Branding and visual identity.">
+  <meta name="twitter:image"       content="og-image.jpg">
+
+  <!-- JSON-LD structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Arantxa González",
+    "jobTitle": "Graphic & Web Designer",
+    "description": "Graphic and web designer specialised in branding, visual identity, UX/UI, graphic design and social media. 2+ years of experience.",
+    "email": "aran.gonzalez.garcia02@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Alcazar de San Juan",
+      "addressRegion": "Castilla-La Mancha",
+      "addressCountry": "ES"
+    },
+    "sameAs": [
+      "https://www.behance.net/arantxagonzalez",
+      "https://linkedin.com/in/arantxagonzalez"
+    ]
+  }
+  </script>
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230d0d0d'/><text x='16' y='24' font-family='system-ui' font-weight='900' font-size='22' fill='white' text-anchor='middle'>a</text></svg>">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#galeria-proyectos">Skip to content</a>
+
+<!-- ════════════════════════════════
+     FULLSCREEN MENU (mobile)
+════════════════════════════════ -->
+<div class="menu-fullscreen" id="menu">
+  <div class="d-flex justify-content-between align-items-center px-4 py-3 w-100">
+    <a href="index.html" class="fw-bold text-dark text-decoration-none" style="font-size:2.5rem;">aran</a>
+    <button class="btn-hamburger d-flex flex-column justify-content-center align-items-center border-0"
+            onclick="document.getElementById('menu').classList.remove('active')"
+            aria-label="Close">
+      <span style="transform:rotate(45deg) translateY(5.5px);background:#111;"></span>
+      <span style="opacity:0;background:#111;"></span>
+      <span style="transform:rotate(-45deg) translateY(-5.5px);background:#111;"></span>
+    </button>
+  </div>
+  <div class="mt-5 pt-4">
+    <div class="lang-switcher mb-4 px-1">
+      <button class="lang-btn" data-lang="en" aria-label="English" title="English"><span class="fi fi-gb"></span></button>
+      <button class="lang-btn" data-lang="es" aria-label="Español" title="Español"><span class="fi fi-es"></span></button>
+    </div>
+    <nav class="d-flex flex-column gap-0">
+      <a href="index.html#habilidades" onclick="document.getElementById('menu').classList.remove('active')" data-i18n="nav.about">About me</a>
+      <a href="index.html#servicios"   onclick="document.getElementById('menu').classList.remove('active')" data-i18n="nav.services">Services</a>
+      <a href="proyectos.html"         onclick="document.getElementById('menu').classList.remove('active')" data-i18n="nav.projects">Projects</a>
+      <a href="contact.html" data-i18n="nav.contact">Contact</a>
+    </nav>
+  </div>
+</div>
+
+<!-- ════════════════════════════════
+     MAIN NAV
+════════════════════════════════ -->
+<section class="hero">
+<nav class="site-nav w-100 d-flex justify-content-between align-items-center px-4 py-3 w-100">
+  <a href="index.html" class="text-white text-decoration-none fw-bold fs-2">aran</a>
+
+  <!-- Desktop menu -->
+  <div class="d-none d-lg-flex gap-4 align-items-center">
+    <a href="index.html#habilidades" class="text-white text-decoration-none small fw-medium opacity-75" data-i18n="nav.about">About me</a>
+    <a href="index.html#servicios"   class="text-white text-decoration-none small fw-medium opacity-75" data-i18n="nav.services">Services</a>
+    <a href="proyectos.html"         class="text-white text-decoration-none small fw-medium" data-i18n="nav.projects">Projects</a>
+    <div class="lang-switcher">
+      <button class="lang-btn" data-lang="en" aria-label="English" title="English"><span class="fi fi-gb"></span></button>
+      <button class="lang-btn" data-lang="es" aria-label="Español" title="Español"><span class="fi fi-es"></span></button>
+    </div>
+    <a href="contact.html" class="btn btn-outline-light rounded-pill px-3 py-1 small fw-medium" data-i18n="nav.contact">Contact</a>
+  </div>
+
+  <!-- Mobile hamburger -->
+  <button class="btn-hamburger d-flex d-lg-none flex-column justify-content-center align-items-center border-0"
+          onclick="document.getElementById('menu').classList.add('active')"
+          aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="position-relative z-1 text-center px-4 hero-content">
+    <h1 class="display-4 fw-bold text-white mb-3" data-i18n="hero.h1">Graphic design,<br>identity &amp; web.</h1>
+    <p class="text-white-50 mb-4 lead" data-i18n="hero.sub">Graphic &amp; web designer with experience across branding, UX/UI, social media, sign-making and screen printing.</p>
+    <div class="d-flex gap-3 flex-wrap justify-content-center">
+      <a href="#contenido-principal" class="btn btn-light rounded-pill px-4 fw-bold" data-i18n="hero.cta">View projects</a>
+      <a href="https://www.behance.net/arantxagonzalez" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light rounded-pill px-4 fw-bold">Behance</a>
+    </div>
+  </div>
+</section>
+
+<!-- SELECTED PROJECTS -->
+<section id="contenido-principal" class="border-top border-dark">
+  <div class="px-4 pt-5 pb-3 border-bottom border-dark">
+    <h2 class="projects-heading m-0" data-i18n="section.projects">Selected Projects</h2>
+  </div>
+
+  <div class="row g-0">
+
+    <div class="col-12 col-md-6 border-end border-bottom border-dark project-card">
+      <img src="images/PAUL RAND/MOCKUP-DOBLADO.webp" alt="Graphic design work" loading="lazy">
+      <div class="project-card-overlay"></div>
+      <div class="project-card-body">
+        <h3 class="project-title text-white mb-3" data-i18n="project.graphic">Graphic Design</h3>
+        <div class="d-flex flex-wrap gap-2">
+          <span class="project-badge">Branding</span>
+          <span class="project-badge">Poster design</span>
+          <span class="project-badge">Visual identity</span>
+        </div>
+      </div>
+      <a href="proyectos.html?filter=grafico" class="stretched-link" aria-label="View graphic design projects"></a>
+    </div>
+
+    <div class="col-12 col-md-6 border-bottom border-dark project-card">
+      <img src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=800&q=80" alt="UX/UI wireframes and prototyping" loading="lazy">
+      <div class="project-card-overlay"></div>
+      <div class="project-card-body">
+        <h3 class="project-title text-white mb-3">UX/UI</h3>
+        <div class="d-flex flex-wrap gap-2">
+          <span class="project-badge">Figma</span>
+          <span class="project-badge">Wireframes</span>
+          <span class="project-badge">Prototyping</span>
+        </div>
+      </div>
+      <a href="proyectos.html?filter=uxui" class="stretched-link" aria-label="View UX/UI projects"></a>
+    </div>
+
+    <div class="col-12 project-card project-card-wide">
+      <img src="https://images.unsplash.com/photo-1533750349088-cd871a92f312?w=1400&q=80" alt="Social media campaigns and content" loading="lazy">
+      <div class="project-card-overlay"></div>
+      <div class="project-card-body">
+        <h3 class="project-title text-white mb-3" data-i18n="project.social">Social Media</h3>
+        <div class="d-flex flex-wrap gap-2">
+          <span class="project-badge">Social networks</span>
+          <span class="project-badge">Content</span>
+          <span class="project-badge">Campaigns</span>
+        </div>
+      </div>
+      <a href="proyectos.html?filter=social" class="stretched-link" aria-label="View social media projects"></a>
+    </div>
+
+  </div>
+</section>
+
+<!-- WHAT I DO -->
+<section id="servicios" class="bg-111">
+  <div class="services-heading-band">
+    <h2 class="services-heading" data-i18n="section.services">What I do</h2>
+  </div>
+  <div class="container py-5">
+    <div class="row g-4">
+
+      <div class="col-12 col-lg-4 py-4">
+        <div class="card service-card card-rotate-left border-0 rounded-3 p-4 h-100 bg-white">
+          <div class="card-body p-0">
+            <h5 class="card-title fw-bold text-uppercase fst-italic mb-2 service-card-title" data-i18n="service.graphic.title">Graphic Design</h5>
+            <p class="text-secondary small mb-3" data-i18n="service.graphic.desc">Pieces that communicate and connect — from logo to poster, with coherence and character.</p>
+            <div class="d-flex flex-wrap gap-3">
+              <span class="badge text-bg-secondary">Branding</span>
+              <span class="badge text-bg-secondary">Visual identity</span>
+              <span class="badge text-bg-secondary">Poster design</span>
+              <span class="badge text-bg-secondary">Packaging</span>
+              <span class="badge text-bg-secondary">Editorial</span>
+              <span class="badge text-bg-secondary">Sign-making</span>
+              <span class="badge text-bg-secondary">Screen printing</span>
+              <span class="badge text-bg-secondary">Motion</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-4 py-4">
+        <div class="card service-card border-0 rounded-3 p-4 h-100 bg-white">
+          <div class="card-body p-0">
+            <h5 class="card-title fw-bold text-uppercase fst-italic mb-2 service-card-title" data-i18n="service.uxui.title">UX/UI</h5>
+            <p class="text-secondary small mb-3" data-i18n="service.uxui.desc">Clear, functional interfaces focused on the real user experience.</p>
+            <div class="d-flex flex-wrap gap-3">
+              <span class="badge text-bg-secondary">Wireframes</span>
+              <span class="badge text-bg-secondary">Prototyping</span>
+              <span class="badge text-bg-secondary">Landing Page</span>
+              <span class="badge text-bg-secondary">E-commerce</span>
+              <span class="badge text-bg-secondary">Mobile app</span>
+              <span class="badge text-bg-secondary">Corporate web</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-4 py-4">
+        <div class="card service-card card-rotate-right border-0 rounded-3 p-4 h-100 bg-white">
+          <div class="card-body p-0">
+            <h5 class="card-title fw-bold text-uppercase fst-italic mb-2 service-card-title" data-i18n="service.social.title">Social Media</h5>
+            <p class="text-secondary small mb-3" data-i18n="service.social.desc">Visual content that builds community, strengthens the brand and converts.</p>
+            <div class="d-flex flex-wrap gap-3">
+              <span class="badge text-bg-secondary">Instagram</span>
+              <span class="badge text-bg-secondary">LinkedIn</span>
+              <span class="badge text-bg-secondary">Visual content</span>
+              <span class="badge text-bg-secondary">Campaigns</span>
+              <span class="badge text-bg-secondary">Stories & Reels</span>
+              <span class="badge text-bg-secondary">Strategy</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT BAND -->
+<section class="bg-contact-band">
+  <div class="container-fluid px-4 px-md-5 py-4">
+    <div class="d-flex flex-wrap align-items-center justify-content-between gap-4">
+
+      <div class="d-flex flex-column gap-1">
+        <span class="text-white fw-bold fs-5">Arantxa González</span>
+        <span class="text-white-50 small" data-i18n="contact.band.role">Graphic &amp; Web Designer · Alcázar de San Juan, Spain</span>
+        <a href="mailto:aran.gonzalez.garcia02@gmail.com" class="contact-email text-white-50 small text-decoration-none">aran.gonzalez.garcia02@gmail.com</a>
+      </div>
+
+      <div class="d-flex flex-wrap gap-2 align-items-center">
+
+        <a href="https://wa.me/34000000000" target="_blank" rel="noopener noreferrer"
+           class="btn btn-sm d-flex align-items-center gap-2 rounded-pill px-3 py-2"
+           style="background:#25D366;color:#fff;font-size:.8rem;font-weight:600;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.118 1.533 5.845L.057 23.882l6.196-1.452A11.932 11.932 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.001-1.371l-.358-.214-3.68.862.926-3.586-.234-.369A9.818 9.818 0 1112 21.818z"/></svg>
+          WhatsApp
+        </a>
+
+        <a href="https://www.behance.net/arantxagonzalez" target="_blank" rel="noopener noreferrer"
+           class="btn btn-sm btn-outline-secondary rounded-pill px-3 py-2 text-white d-flex align-items-center gap-2"
+           style="font-size:.8rem;font-weight:600;">
+          <svg width="16" height="10" viewBox="0 0 50 25" fill="currentColor"><path d="M0 0h18.5c4 0 7.5 2.5 7.5 7 0 2.5-1 4.5-3 5.5 3 1 4.5 3.5 4.5 6.5 0 5-4 6-8 6H0V0zm6 10h10c1.5 0 3-1 3-3s-1.5-3-3-3H6v6zm0 11h11c2 0 3.5-1 3.5-3.5S18.5 14 17 14H6v7zm26-5h16c0-5-3-8-8-8s-8 3-8 8 3 8 8 8c3.5 0 6-1.5 7.5-4.5h-5C45 22.5 44 23 42 23c-3 0-5-1.5-5-4v-3zm10-5c-2.5 0-4.5 1.5-5 4h10c-.5-2.5-2.5-4-5-4zM34 2h12v3H34V2z"/></svg>
+          Behance
+        </a>
+
+        <a href="https://linkedin.com/in/arantxagonzalez" target="_blank" rel="noopener noreferrer"
+           class="btn btn-sm btn-outline-secondary rounded-pill px-3 py-2 text-white d-flex align-items-center gap-2"
+           style="font-size:.8rem;font-weight:600;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          LinkedIn
+        </a>
+
+        <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer"
+           class="btn btn-sm btn-outline-secondary rounded-pill px-3 py-2 text-white d-flex align-items-center gap-2"
+           style="font-size:.8rem;font-weight:600;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+          Instagram
+        </a>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT ME -->
+<section class="py-5 bg-0f0f0f" id="habilidades">
+  <div class="container">
+    <div class="row g-4">
+
+      <div class="col-lg-7">
+        <p class="text-white-50 small mb-4 font-monospace ls-wide" data-i18n="about.path">... /About me ...</p>
+        <div class="d-flex align-items-center gap-3">
+          <!-- Circular photo — mobile only -->
+          <img src="images/me.jpg"
+               alt="Arantxa González, graphic and web designer"
+               class="rounded-circle object-fit-cover flex-shrink-0 d-lg-none photo-profile-sm photo-grayscale"
+               loading="lazy">
+          <h3 class="text-white fs-4 fw-light lh-lg mb-0" data-i18n="about.h3">
+            Hi, I'm <strong class="fst-italic">Arantxa</strong>,<br>
+            graphic &amp; web designer<br>
+            with a focus on <strong class="fst-italic">branding &amp; visual identity</strong>.
+          </h3>
+        </div>
+
+        <div class="mt-4">
+          <div class="border border-light-subtle rounded-3 p-3 mb-3 skill-card-light">
+            <p class="fw-bold mb-2">Design</p>
+            <p class="text-secondary small mb-0 font-monospace">Photoshop / Illustrator / InDesign / Figma / Canva</p>
+          </div>
+          <div class="row g-3">
+            <div class="col-6">
+              <div class="border border-light-subtle rounded-3 p-3 h-100">
+                <p class="fw-bold text-white mb-2">Motion & Video</p>
+                <p class="small mb-0 font-monospace text-white-dim">After Effects / Premiere</p>
+              </div>
+            </div>
+            <div class="col-6 d-flex align-items-center justify-content-center">
+              <a href="https://linkedin.com/in/arantxagonzalez" target="_blank" rel="noopener noreferrer"
+                 class="btn btn-outline-secondary rounded-pill px-3 py-2 text-white d-flex align-items-center gap-2">
+                <span class="bg-white rounded-circle d-flex align-items-center justify-content-center icon-circle-sm">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="#0d0d0d"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+                </span>
+                LinkedIn ↗
+              </a>
+            </div>
+          </div>
+          <div class="border border-light-subtle rounded-3 p-3 mt-3">
+            <p class="fw-bold text-white mb-2">Web</p>
+            <p class="small mb-0 font-monospace text-white-dim" data-i18n="about.web.tools">HTML / CSS / JavaScript / Bootstrap / WordPress</p>
+            <p class="small mb-0 font-monospace text-white-50 mt-1" data-i18n="about.web.note">(código usado para realizar esta web)</p>
+          </div>
+          <div class="border border-light-subtle rounded-3 p-3 mt-3">
+            <p class="fw-bold text-white mb-2">AI</p>
+            <p class="small mb-0 font-monospace text-white-dim">ChatGPT / Claude / Gemini</p>
+          </div>
+          <div class="border border-light-subtle rounded-3 p-3 mt-3">
+            <p class="fw-bold text-white mb-2" data-i18n="about.education">Education</p>
+            <p class="small mb-0 font-monospace text-white-dim">Master's in Graphic & Web Design · Web App Dev · HND in Advertising Graphics</p>
+          </div>
+        </div>
+
+        <p class="mt-4 small text-white-faint" data-i18n="about.bio">
+          I'm passionate about creating with purpose and caring for every detail.<br>
+          Currently working in <em><strong class="text-white-hint">sign-making &amp; screen printing</strong></em>,<br>
+          where I bridge design and hands-on production.<br>
+          Outside work, I'm also a <em><strong class="text-white-hint">judo instructor</strong></em> —<br>
+          discipline I bring to everything I do.
+        </p>
+      </div>
+
+      <div class="col-lg-5 d-none d-lg-flex align-items-center">
+        <div class="rounded-3 overflow-hidden w-100">
+          <img src="images/me.jpg"
+               alt="Arantxa González, graphic and web designer — profile photo"
+               loading="lazy"
+               class="w-100 d-block photo-grayscale">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-0d0d0d">
+  <div class="container-fluid px-4 px-md-5 py-4 d-flex flex-wrap align-items-center justify-content-between gap-3">
+    <p class="text-white-50 small mb-0 footer-tagline" data-i18n="footer.tagline">Open to collaborations and new projects</p>
+    <div class="d-flex gap-2">
+      <a href="https://www.behance.net/arantxagonzalez" target="_blank" rel="noopener noreferrer"
+         class="btn btn-outline-secondary rounded-circle d-flex align-items-center justify-content-center p-0 text-white"
+         style="width:40px;height:40px;font-size:0.7rem;font-weight:700;">Be</a>
+      <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer"
+         class="btn btn-outline-secondary rounded-circle d-flex align-items-center justify-content-center p-0"
+         style="width:40px;height:40px;">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="rgba(255,255,255,0.6)"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+      </a>
+      <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer"
+         class="btn btn-outline-secondary rounded-circle d-flex align-items-center justify-content-center p-0"
+         style="width:40px;height:40px;">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="rgba(255,255,255,0.6)"/></svg>
+      </a>
+    </div>
+    <a href="mailto:aran.gonzalez.garcia02@gmail.com" class="btn btn-light rounded-pill px-4 py-2 fw-semibold" data-i18n="footer.email">Email me</a>
+  </div>
+</footer>
+
+<button id="scrollTop" class="scroll-top-btn" aria-label="Scroll to top">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#111" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="18 15 12 9 6 15"/>
+  </svg>
+</button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+<script src="scripts.js?v=3"></script>
+<script src="lang.js"></script>
+</body>
+</html>

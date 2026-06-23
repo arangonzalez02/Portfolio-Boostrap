@@ -1,0 +1,335 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Graphic design, branding, UX/UI and social media projects by Arantxa González — graphic and web designer based in Alcázar de San Juan, Spain.">
+  <meta name="author" content="Arantxa González">
+  <meta name="robots" content="index, follow">
+  <title>Projects — Arantxa González | Branding, UX/UI & Social Media</title>
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website">
+  <meta property="og:title"       content="Projects — Arantxa González | Graphic & Web Designer">
+  <meta property="og:description" content="A selection of branding, visual identity, UX/UI, graphic design and social media projects by Arantxa González.">
+  <meta property="og:locale"      content="en_GB">
+  <meta property="og:site_name"   content="Arantxa González Portfolio">
+  <meta property="og:image"       content="og-image.jpg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="Projects — Arantxa González | Graphic & Web Designer">
+  <meta name="twitter:description" content="A selection of branding, UX/UI, graphic design and social media projects.">
+  <meta name="twitter:image"       content="og-image.jpg">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230d0d0d'/><text x='16' y='24' font-family='system-ui' font-weight='900' font-size='22' fill='white' text-anchor='middle'>a</text></svg>">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-f5f5f5">
+
+<a class="skip-link" href="#galeria-proyectos">Skip to content</a>
+
+<!-- ════════════════════════════════
+     FULLSCREEN MENU (mobile)
+════════════════════════════════ -->
+<div class="menu-fullscreen" id="menu">
+  <div class="d-flex justify-content-between align-items-center px-4 py-3 w-100">
+    <a href="index.html" class="fw-bold text-dark text-decoration-none" style="font-size:2.5rem;">aran</a>
+    <button class="btn-hamburger d-flex flex-column justify-content-center align-items-center border-0"
+            onclick="document.getElementById('menu').classList.remove('active')"
+            aria-label="Close">
+      <span style="transform:rotate(45deg) translateY(5.5px);background:#111;"></span>
+      <span style="opacity:0;background:#111;"></span>
+      <span style="transform:rotate(-45deg) translateY(-5.5px);background:#111;"></span>
+    </button>
+  </div>
+  <div class="mt-5 pt-4">
+    <div class="lang-switcher mb-4 px-1">
+      <button class="lang-btn" data-lang="en" aria-label="English" title="English"><span class="fi fi-gb"></span></button>
+      <button class="lang-btn" data-lang="es" aria-label="Español" title="Español"><span class="fi fi-es"></span></button>
+    </div>
+    <nav class="d-flex flex-column gap-0">
+      <a href="index.html#habilidades" onclick="document.getElementById('menu').classList.remove('active')" data-i18n="nav.about">About me</a>
+      <a href="index.html#servicios"   onclick="document.getElementById('menu').classList.remove('active')" data-i18n="nav.services">Services</a>
+      <a href="proyectos.html"         onclick="document.getElementById('menu').classList.remove('active')" data-i18n="nav.projects">Projects</a>
+      <a href="contact.html" data-i18n="nav.contact">Contact</a>
+    </nav>
+  </div>
+</div>
+
+<!-- ════════════════════════════════
+     MAIN NAV
+════════════════════════════════ -->
+<nav class="site-nav w-100 d-flex justify-content-between align-items-center px-4 py-3 w-100">
+  <a href="index.html" class="text-white text-decoration-none fw-bold fs-2">aran</a>
+
+  <!-- Desktop menu -->
+  <div class="d-none d-lg-flex gap-4 align-items-center">
+    <a href="index.html#habilidades" class="text-white text-decoration-none small fw-medium opacity-75" data-i18n="nav.about">About me</a>
+    <a href="index.html#servicios"   class="text-white text-decoration-none small fw-medium opacity-75" data-i18n="nav.services">Services</a>
+    <a href="proyectos.html"         class="text-white text-decoration-none small fw-medium" data-i18n="nav.projects">Projects</a>
+    <div class="lang-switcher">
+      <button class="lang-btn" data-lang="en" aria-label="English" title="English"><span class="fi fi-gb"></span></button>
+      <button class="lang-btn" data-lang="es" aria-label="Español" title="Español"><span class="fi fi-es"></span></button>
+    </div>
+    <a href="contact.html" class="btn btn-outline-light rounded-pill px-3 py-1 small fw-medium" data-i18n="nav.contact">Contact</a>
+  </div>
+
+  <!-- Mobile hamburger -->
+  <button class="btn-hamburger d-flex d-lg-none flex-column justify-content-center align-items-center border-0"
+          onclick="document.getElementById('menu').classList.add('active')"
+          aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ════════════════════════════════
+     PAGE HEADER
+════════════════════════════════ -->
+<section class="border-bottom border-dark bg-0d0d0d">
+  <div class="px-4 px-md-5 pt-5 pb-4 d-flex flex-wrap align-items-end justify-content-between gap-3">
+    <div>
+      <p class="text-white-50 small font-monospace mb-2 ls-wide" data-i18n="projects.path">... /Projects ...</p>
+      <h1 class="page-heading text-white m-0" data-i18n="projects.h1">Selected<br>Projects</h1>
+    </div>
+    <p class="text-white-50 small mb-1 page-desc">
+      <span data-i18n="projects.desc">A selection of graphic design, UX/UI and social media work from throughout my career.</span>
+    </p>
+  </div>
+
+  <!-- Filters -->
+  <div class="px-4 px-md-5 pb-4 d-flex flex-wrap gap-2">
+    <button class="filter-btn active" data-filter="all"      data-i18n="filter.all">All</button>
+    <button class="filter-btn" data-filter="grafico"         data-i18n="filter.graphic">Graphic Design</button>
+    <button class="filter-btn" data-filter="uxui"            data-i18n="filter.uxui">UX / UI</button>
+    <button class="filter-btn" data-filter="social"          data-i18n="filter.social">Social Media</button>
+    <button class="filter-btn" data-filter="branding"        data-i18n="filter.branding">Branding</button>
+  </div>
+</section>
+
+<!-- ════════════════════════════════
+     GALLERY
+════════════════════════════════ -->
+<main class="px-0" id="galeria-proyectos">
+
+  <!-- ROW 1: featured (7 cols, 500px) + two stacked (5 cols, 250px each) -->
+  <div class="row g-0 border-bottom border-dark">
+
+    <div class="col-12 col-md-7 border-end border-dark gallery-item" data-cat="grafico branding">
+      <a href="proyectos-corporevisual.html" class="gallery-link" aria-label="Ver proyecto Corporate Visual">
+        <div class="gallery-card h-feat">
+          <img src="images/CHOWA/MOCKUP-PUERTA.webp" alt="Corporate visual identity and branding project" loading="lazy">
+          <div class="gallery-card-overlay always-on">
+            <span class="proj-number mb-2">01</span>
+            <h2 class="card-label mb-2">Corporate Visual<br>Identity & Branding</h2>
+            <div class="d-flex flex-wrap gap-2 mt-1">
+              <span class="project-badge">Branding</span>
+              <span class="project-badge">Logo</span>
+              <span class="project-badge">Style guide</span>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-12 col-md-5 d-flex flex-column">
+      <div class="gallery-item border-bottom border-dark" data-cat="uxui">
+        <div class="gallery-card h-half">
+          <img src="https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?w=700&q=80" alt="UX/UI mobile app design" loading="lazy">
+          <div class="gallery-card-overlay">
+            <span class="proj-number mb-1">02</span>
+            <p class="card-label mb-2">UX/UI Mobile App</p>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="card-tag">Figma</span>
+              <span class="card-tag">Prototyping</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-item" data-cat="social">
+        <div class="gallery-card h-half">
+          <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=700&q=80" alt="Instagram campaign social media design" loading="lazy">
+          <div class="gallery-card-overlay">
+            <span class="proj-number mb-1">03</span>
+            <p class="card-label mb-2">Instagram Campaign</p>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="card-tag">Social Media</span>
+              <span class="card-tag">Content</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ROW 2: three equal columns (4+4+4 cols, 420px each) -->
+  <div class="row g-0 border-bottom border-dark">
+
+    <div class="col-12 col-md-4 border-end border-dark gallery-item" data-cat="grafico">
+      <a href="proyectos-poster-editorial.html" class="gallery-link" aria-label="Ver proyecto Poster & Editorial">
+        <div class="gallery-card h-tall">
+          <img src="images/PAUL RAND/MOCKUP-DOBLADO.webp" alt="Poster and editorial graphic design" loading="lazy">
+          <div class="gallery-card-overlay">
+            <span class="proj-number mb-1">04</span>
+            <p class="card-label mb-2" data-i18n="projects.poster.title">Poster & Editorial</p>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="card-tag" data-i18n="projects.poster.tag1">Graphic Design</span>
+              <span class="card-tag" data-i18n="projects.poster.tag2">Print</span>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-12 col-md-4 border-end border-dark gallery-item" data-cat="branding grafico">
+      <div class="gallery-card h-tall">
+        <img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=600&q=80" alt="Packaging and product design" loading="lazy">
+        <div class="gallery-card-overlay">
+          <span class="proj-number mb-1">05</span>
+          <p class="card-label mb-2">Packaging & Product</p>
+          <div class="d-flex flex-wrap gap-2">
+            <span class="card-tag">Branding</span>
+            <span class="card-tag">Packaging</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-4 gallery-item" data-cat="uxui">
+      <div class="gallery-card h-tall">
+        <img src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=600&q=80" alt="Landing page web design" loading="lazy">
+        <div class="gallery-card-overlay">
+          <span class="proj-number mb-1">06</span>
+          <p class="card-label mb-2">Landing Page Design</p>
+          <div class="d-flex flex-wrap gap-2">
+            <span class="card-tag">UX/UI</span>
+            <span class="card-tag">Web</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ROW 3: wide (8 cols) + side (4 cols), both 300px -->
+  <div class="row g-0 border-bottom border-dark">
+
+    <div class="col-12 col-md-8 border-end border-dark gallery-item" data-cat="social branding">
+      <div class="gallery-card h-mid">
+        <img src="https://images.unsplash.com/photo-1533750349088-cd871a92f312?w=1000&q=80" alt="Social media strategy campaigns" loading="lazy">
+        <div class="gallery-card-overlay">
+          <span class="proj-number mb-1">07</span>
+          <p class="card-label mb-2">Social Media Strategy</p>
+          <div class="d-flex flex-wrap gap-2">
+            <span class="card-tag">Campaigns</span>
+            <span class="card-tag">Stories</span>
+            <span class="card-tag">Reels</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-4 gallery-item" data-cat="grafico">
+      <div class="gallery-card h-mid">
+        <img src="https://images.unsplash.com/photo-1572044162444-ad60f128bdea?w=600&q=80" alt="Motion graphics animation" loading="lazy">
+        <div class="gallery-card-overlay">
+          <span class="proj-number mb-1">08</span>
+          <p class="card-label mb-2">Motion Graphics</p>
+          <div class="d-flex flex-wrap gap-2">
+            <span class="card-tag">After Effects</span>
+            <span class="card-tag">Animation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ROW 4: four equal columns (3+3+3+3 cols, 220px each) -->
+  <div class="row g-0">
+
+    <div class="col-6 col-md-3 border-end border-dark gallery-item" data-cat="branding">
+      <div class="gallery-card h-sm">
+        <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=500&q=80" alt="Personal brand identity design" loading="lazy">
+        <div class="gallery-card-overlay">
+          <span class="proj-number mb-1">09</span>
+          <p class="card-label card-label-sm mb-1">Personal brand</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-3 border-end border-dark gallery-item" data-cat="uxui">
+      <div class="gallery-card h-sm">
+        <img src="https://images.unsplash.com/photo-1616469829581-73993eb86b02?w=500&q=80" alt="E-commerce app UX/UI design" loading="lazy">
+        <div class="gallery-card-overlay">
+          <span class="proj-number mb-1">10</span>
+          <p class="card-label card-label-sm mb-1">E-commerce app</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-3 border-end border-dark gallery-item" data-cat="social">
+      <div class="gallery-card h-sm">
+        <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=500&q=80" alt="Instagram feed design and content" loading="lazy">
+        <div class="gallery-card-overlay">
+          <span class="proj-number mb-1">11</span>
+          <p class="card-label card-label-sm mb-1">Instagram Feed</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-3 gallery-item" data-cat="grafico branding">
+      <div class="gallery-card h-sm">
+        <img src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=500&q=80" alt="Typographic poster graphic design" loading="lazy">
+        <div class="gallery-card-overlay">
+          <span class="proj-number mb-1">12</span>
+          <p class="card-label card-label-sm mb-1">Typographic Poster</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</main>
+
+<!-- ════════════════════════════════
+     FOOTER
+════════════════════════════════ -->
+<footer class="bg-0d0d0d">
+  <div class="container-fluid px-4 px-md-5 py-4 d-flex flex-wrap align-items-center justify-content-between gap-3">
+    <p class="text-white-50 small mb-0 footer-tagline" data-i18n="footer.tagline">Open to collaborations and new projects</p>
+    <div class="d-flex gap-2">
+      <a href="https://www.behance.net/arantxagonzalez" target="_blank" rel="noopener noreferrer"
+         aria-label="Behance"
+         class="btn btn-outline-secondary rounded-circle d-flex align-items-center justify-content-center p-0 text-white"
+         style="width:40px;height:40px;font-size:0.7rem;font-weight:700;">Be</a>
+      <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer"
+         aria-label="LinkedIn"
+         class="btn btn-outline-secondary rounded-circle d-flex align-items-center justify-content-center p-0"
+         style="width:40px;height:40px;">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="rgba(255,255,255,0.6)" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+      </a>
+      <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer"
+         aria-label="Instagram"
+         class="btn btn-outline-secondary rounded-circle d-flex align-items-center justify-content-center p-0"
+         style="width:40px;height:40px;">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="rgba(255,255,255,0.6)"/></svg>
+      </a>
+    </div>
+    <a href="mailto:arantxa757402@gmail.com" class="btn btn-light rounded-pill px-4 py-2 fw-semibold" data-i18n="footer.email">Email me</a>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+
+<script src="scripts.js?v=3"></script>
+<script src="proyectos.js"></script>
+<script src="lang.js"></script>
+<button class="page-back-btn" aria-label="Volver" onclick="(function(){ if(history.length>1){history.back()}else{window.location.href='index.html'}})()"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg></button>
+</body>
+</html>
+
+

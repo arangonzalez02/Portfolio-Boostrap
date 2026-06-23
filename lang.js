@@ -1,0 +1,277 @@
+/* ════════════════════════════════
+   lang.js — sistema de idiomas
+   aran · portfolio
+════════════════════════════════ */
+
+var translations = {
+  en: {
+    'nav.about':    'About me',
+    'nav.services': 'Services',
+    'nav.projects': 'Projects',
+    'nav.contact':  'Contact',
+
+    'hero.h1':  'Graphic design,<br>identity &amp; web.',
+    'hero.sub': 'Graphic &amp; web designer with experience across branding, UX/UI, social media, sign-making and screen printing.',
+    'hero.cta': 'View projects',
+
+    'section.projects': 'Selected Projects',
+    'project.graphic':  'Graphic Design',
+    'project.social':   'Social Media',
+
+    'section.services':     'What I do',
+    'service.graphic.title': 'Graphic Design',
+    'service.graphic.desc':  'Pieces that communicate and connect — from logo to poster, with coherence and character.',
+    'service.uxui.title':    'UX/UI',
+    'service.uxui.desc':     'Clear, functional interfaces focused on the real user experience.',
+    'service.social.title':  'Social Media',
+    'service.social.desc':   'Visual content that builds community, strengthens the brand and converts.',
+
+    'contact.band.role': 'Graphic &amp; Web Designer · Alcázar de San Juan, Spain',
+    'cv.download': 'Download CV',
+
+    'about.path': '... /About me ...',
+    'about.h3':   'Hi, I\'m <strong class="fst-italic">Arantxa</strong>,<br>graphic &amp; web designer<br>with a focus on <strong class="fst-italic">branding &amp; visual identity</strong>.',
+    'about.education': 'Education',
+    'about.web.tools': 'HTML / CSS / JavaScript / Bootstrap / WordPress',
+    'about.web.note': '(code used to build this website)',
+    'about.bio':  'I\'m passionate about creating with purpose and caring for every detail.<br>Currently working in <em><strong class="text-white-hint">sign-making &amp; screen printing</strong></em>,<br>where I bridge design and hands-on production.<br>Outside work, I\'m also a <em><strong class="text-white-hint">judo instructor</strong></em> —<br>discipline I bring to everything I do.',
+
+    'footer.tagline': 'Open to collaborations and new projects',
+    'footer.email':   'Email me',
+
+    'projects.path': '... /Projects ...',
+    'projects.h1':   'Selected<br>Projects',
+    'projects.desc': 'A selection of graphic design, UX/UI and social media work from throughout my career.',
+    'filter.all':     'All',
+    'filter.graphic': 'Graphic Design',
+    'filter.uxui':    'UX / UI',
+    'filter.social':  'Social Media',
+    'filter.branding':'Branding',
+    'projects.poster.title': 'Poster & Editorial',
+    'projects.poster.tag1': 'Graphic Design',
+    'projects.poster.tag2': 'Print',
+
+    'corp.title': 'Corporate Visual Identity & Branding',
+    'corp.chowa.title': 'CHOWA — Brand Application',
+    'corp.chowa.desc': 'Chowa is a full branding and naming project for a conceptual restaurant combining Korean and Japanese fusion cuisine.',
+    'corp.pdm.title': 'PDM — Brand Application',
+    'corp.pdm.desc': 'PDM is a branding project for a sports initiative with a dynamic, contemporary visual approach.',
+    'poster.title': 'Poster & Editorial — Printed Communication',
+    'poster.desc': 'A selection of posters, editorial layouts and printed systems that prioritize typography, visual hierarchy and brand voice.',
+    'poster.card1.title': 'Poster Campaign',
+    'poster.card1.desc': 'Explore typographic series for event posters and editorial-led brand pieces.',
+    'poster.card2.title': 'Editorial Design',
+    'poster.card2.desc': 'Printed layouts and graphic systems for magazines, brochures and brand publications.',
+    'poster.list.1': 'Poster design',
+    'poster.list.2': 'Editorial layout',
+    'poster.list.3': 'Print art direction',
+    'poster.list.4': 'Typographic systems',
+    'poster.list.5': 'Visual communication campaigns',
+    'chowa.title': 'Proyecto Chowa: Identidad y Armonía Visual',
+    'chowa.desc': 'Chowa is a branding and naming project for a conceptual fusion restaurant. The project focuses on developing a fluid visual identity that balances modernity and tradition across print, signage and menu design.',
+    'chowa.manual': 'Manual Restaurante',
+    'chowa.memory': 'Memoria Restaurante',
+    'chowa.list.1': 'Branding concept and naming',
+    'chowa.list.2': 'Corporate identity design',
+    'chowa.list.3': 'Editorial design (manual and menu)',
+    'chowa.list.4': 'Signage and applications',
+    'chowa.list.5': 'Art direction',
+    'pdm.title': 'Proyecto PDM: Marca Deportiva y Comunicación Visual',
+    'pdm.desc': 'PDM is a branding project for a sports initiative with a dynamic, contemporary visual approach, showing identity, packaging and merchandising applications.',
+    'pdm.manual': 'PDM Manual',
+    'pdm.list.1': 'Visual identity',
+    'pdm.list.2': 'Packaging and labels',
+    'pdm.list.3': 'Sports merchandising',
+    'pdm.list.4': 'Brand applications',
+    'asora.title': 'ASORA — Institutional Poster Campaign',
+    'asora.desc': 'Real commissioned project. ASORA (Association for Addiction Rehabilitation of Tomelloso) requested up to three poster proposals. The selected design was the third option, built around three impactful phrases.',
+    'asora.list.1': 'Poster design',
+    'asora.list.2': 'Layout & composition',
+    'asora.list.3': 'Vector editing',
+    'asora.list.4': 'Typographic composition',
+    'asora.card.main': 'Selected proposal',
+    'asora.prop1': 'Proposal 1',
+    'asora.prop2': 'Proposal 2',
+    'asora.prop3': 'Proposal 3 — Selected',
+    'asora.selected': '✓ Selected',
+    'asora.card.title': 'ASORA — Institutional Posters',
+    'asora.card.desc': '3 poster proposals, third one selected.',
+    'cambio.title': 'Climate Change — Mid Century / Bolshevik',
+    'cambio.desc': 'A visual communication project focusing on environmental awareness.',
+    'cambio.list.1': 'Graphic campaigns',
+    'cambio.list.2': 'Informative poster design',
+    'cambio.list.3': 'Visual systems',
+    'cambio.card.title': 'Climate Change — Mid Century / Bolshevik',
+    'cambio.card.desc': 'Campaign posters and informative graphics.',
+    'paul.title': 'Cartel Tipográfico',
+    'paul.desc': "Series inspired by Paul Rand's visual language, focusing on bold shapes and typography.",
+    'paul.list.1': 'Poster design',
+    'paul.list.2': 'Typographic studies',
+    'paul.list.3': 'Visual references',
+    'paul.card.title': 'Cartel Tipográfico',
+    'paul.card.desc': 'Typographic experiments and poster studies.',
+    'farcama.title': 'FARCAMA — Magazine Layout',
+    'farcama.desc': 'Editorial layout project focused on rhythm, typography and modular grids.',
+    'farcama.list.1': 'Editorial design',
+    'farcama.list.2': 'Article layout',
+    'farcama.list.3': 'Modular grid systems',
+    'farcama.card.title': 'FARCAMA — Magazine Layout',
+    'farcama.card.desc': 'Editorial layouts and magazine spreads.',
+
+    'contact.back':      'Back',
+    'contact.role':      'Graphic &amp; Web Designer',
+    'contact.email.lbl': 'Email',
+    'contact.qr.title':  'Scan to add my contact',
+    'contact.qr.desc':   'Point your camera at the code to save my details directly.',
+    'contact.cv':        'Download CV',
+    'contact.location':  'Alcázar de San Juan, Spain',
+    'contact.available': 'Available for projects'
+  },
+
+  es: {
+    'nav.about':    'Sobre mí',
+    'nav.services': 'Servicios',
+    'nav.projects': 'Proyectos',
+    'nav.contact':  'Contacto',
+
+    'hero.h1':  'Diseño gráfico,<br>identidad y web.',
+    'hero.sub': 'Diseñadora gráfica y web con experiencia en branding, UX/UI, redes sociales, rotulación y serigrafía.',
+    'hero.cta': 'Ver proyectos',
+
+    'section.projects': 'Proyectos Seleccionados',
+    'project.graphic':  'Diseño Gráfico',
+    'project.social':   'Redes Sociales',
+
+    'section.services':     'Qué hago',
+    'service.graphic.title': 'Diseño Gráfico',
+    'service.graphic.desc':  'Piezas que comunican y conectan — del logotipo al cartel, con coherencia y carácter.',
+    'service.uxui.title':    'UX/UI',
+    'service.uxui.desc':     'Interfaces claras y funcionales centradas en la experiencia real del usuario.',
+    'service.social.title':  'Social Media',
+    'service.social.desc':   'Contenido visual que construye comunidad, refuerza la marca y convierte.',
+
+    'contact.band.role': 'Diseñadora Gráfica y Web · Alcázar de San Juan, España',
+    'cv.download': 'Descargar CV',
+
+    'about.path': '... /Sobre mí ...',
+    'about.h3':   'Hola, soy <strong class="fst-italic">Arantxa</strong>,<br>diseñadora gráfica y web<br>con foco en <strong class="fst-italic">branding e identidad visual</strong>.',
+    'about.education': 'Formación',
+    'about.web.tools': 'HTML / CSS / JavaScript / Bootstrap / WordPress',
+    'about.web.note': '(código usado para realizar esta web)',
+    'about.bio':  'Me apasiona crear con propósito y cuidar cada detalle.<br>Actualmente trabajo en <em><strong class="text-white-hint">rotulación y serigrafía</strong></em>,<br>donde combino diseño y producción manual.<br>Fuera del trabajo, también soy <em><strong class="text-white-hint">instructora de judo</strong></em> —<br>disciplina que aplico a todo lo que hago.',
+
+    'footer.tagline': 'Abierta a colaboraciones y nuevos proyectos',
+    'footer.email':   'Escríbeme',
+
+    'projects.path': '... /Proyectos ...',
+    'projects.h1':   'Proyectos<br>Seleccionados',
+    'projects.desc': 'Una selección de diseño gráfico, UX/UI y redes sociales a lo largo de mi carrera.',
+    'filter.all':     'Todo',
+    'filter.graphic': 'Diseño Gráfico',
+    'filter.uxui':    'UX / UI',
+    'filter.social':  'Social Media',
+    'filter.branding':'Branding',
+    'projects.poster.title': 'Poster & Editorial',
+    'projects.poster.tag1': 'Diseño Gráfico',
+    'projects.poster.tag2': 'Impreso',
+    'corp.title': 'Corporate Visual Identity & Branding',
+    'corp.chowa.title': 'CHOWA — Brand Application',
+    'corp.chowa.desc': 'Chowa es un ejercicio de branding y naming integral para un restaurante ficticio de cocina contemporánea de fusión coreano-japonesa.',
+    'corp.pdm.title': 'PDM — Aplicación de Marca',
+    'corp.pdm.desc': 'PDM es un proyecto de branding para una iniciativa deportiva, con un enfoque visual dinámico y contemporáneo.',
+    'poster.title': 'Poster & Editorial — Comunicación Impresa',
+    'poster.desc': 'Una selección de cartelería, maquetación editorial y sistemas gráficos impresos que priorizan la tipografía, la jerarquía visual y el tono de marca.',
+    'poster.card1.title': 'Campaña de Carteles',
+    'poster.card1.desc': 'Explora series tipográficas para cartelería y piezas de evento con tono editorial.',
+    'poster.card2.title': 'Diseño Editorial',
+    'poster.card2.desc': 'Maquetación impresa y sistemas gráficos para revistas, folletos y publicaciones de marca.',
+    'poster.list.1': 'Diseño de cartelería',
+    'poster.list.2': 'Maquetación editorial',
+    'poster.list.3': 'Dirección de arte impresa',
+    'poster.list.4': 'Sistemas tipográficos',
+    'poster.list.5': 'Campañas de comunicación visual',
+    'chowa.title': 'Proyecto Chowa: Identidad y Armonía Visual',
+    'chowa.desc': 'Chowa es un proyecto de branding y naming para un restaurante de fusión. El proyecto desarrolla una identidad visual fluida que equilibra modernidad y tradición en diseño impreso, señalética y menú.',
+    'chowa.manual': 'Manual Restaurante',
+    'chowa.memory': 'Memoria Restaurante',
+    'chowa.list.1': 'Branding y naming',
+    'chowa.list.2': 'Diseño de identidad corporativa',
+    'chowa.list.3': 'Diseño editorial (manual y menú)',
+    'chowa.list.4': 'Señalética y aplicaciones',
+    'chowa.list.5': 'Dirección de arte',
+    'pdm.title': 'Proyecto PDM: Marca Deportiva y Comunicación Visual',
+    'pdm.desc': 'PDM es un proyecto de branding para una iniciativa deportiva con un enfoque visual dinámico y contemporáneo, mostrando aplicaciones de identidad, packaging y merchandising.',
+    'pdm.manual': 'Manual PDM',
+    'pdm.list.1': 'Identidad visual',
+    'pdm.list.2': 'Packaging y labels',
+    'pdm.list.3': 'Merchandising deportivo',
+    'pdm.list.4': 'Aplicaciones de marca',
+
+    'asora.title': 'ASORA — Campaña de Cartelería Institucional',
+    'asora.desc': 'Proyecto real de encargo. ASORA (Asociación para la Rehabilitación de Adicciones de Tomelloso) solicitó hasta tres propuestas de cartel. La propuesta seleccionada fue la tercera opción, construida en torno a tres frases de impacto.',
+    'asora.list.1': 'Diseño de cartelería',
+    'asora.list.2': 'Maquetación',
+    'asora.list.3': 'Edición vectorial',
+    'asora.list.4': 'Composición tipográfica',
+    'asora.card.main': 'Propuesta seleccionada',
+    'asora.prop1': 'Propuesta 1',
+    'asora.prop2': 'Propuesta 2',
+    'asora.prop3': 'Propuesta 3 — Elegida',
+    'asora.selected': '✓ Seleccionada',
+    'asora.card.title': 'ASORA — Cartelería Institucional',
+    'asora.card.desc': '3 propuestas de cartel, elegida la tercera.',
+    'cambio.title': 'Cambio Climático — Mid Century / Bolchevique',
+    'cambio.desc': 'Proyecto de comunicación visual centrado en la concienciación ambiental.',
+    'cambio.list.1': 'Campañas gráficas',
+    'cambio.list.2': 'Cartelería informativa',
+    'cambio.list.3': 'Sistemas visuales',
+    'cambio.card.title': 'Cambio Climático — Mid Century / Bolchevique',
+    'cambio.card.desc': 'Cartelería de campaña y gráficos informativos.',
+    'paul.title': 'Cartel Tipográfico',
+    'paul.desc': 'Series inspiradas en el lenguaje visual de Paul Rand, con énfasis en formas y tipografía.',
+    'paul.list.1': 'Diseño de cartelería',
+    'paul.list.2': 'Estudios tipográficos',
+    'paul.list.3': 'Referencias visuales',
+    'paul.card.title': 'Cartel Tipográfico',
+    'paul.card.desc': 'Experimentos tipográficos y estudios de cartel.',
+    'farcama.title': 'FARCAMA — Maquetación de Revista',
+    'farcama.desc': 'Proyecto de maquetación editorial centrado en ritmo, tipografía y rejillas modulares.',
+    'farcama.list.1': 'Diseño editorial',
+    'farcama.list.2': 'Maquetación de artículos',
+    'farcama.list.3': 'Sistemas de rejilla modular',
+    'farcama.card.title': 'FARCAMA — Maquetación',
+    'farcama.card.desc': 'Maquetación editorial y spreads de revista.',
+
+    'contact.back':      'Volver',
+    'contact.role':      'Diseñadora Gráfica y Web',
+    'contact.email.lbl': 'Correo',
+    'contact.qr.title':  'Escanea para añadir mi contacto',
+    'contact.qr.desc':   'Apunta la cámara al código para guardar mis datos directamente.',
+    'contact.cv':        'Descargar CV',
+    'contact.location':  'Alcázar de San Juan, España',
+    'contact.available': 'Disponible para proyectos'
+  }
+};
+
+function applyLang(lang) {
+  localStorage.setItem('lang', lang);
+  document.documentElement.lang = lang;
+  var t = translations[lang];
+  document.querySelectorAll('[data-i18n]').forEach(function(el) {
+    var key = el.getAttribute('data-i18n');
+    if (t[key] !== undefined) el.innerHTML = t[key];
+  });
+  document.querySelectorAll('.lang-btn').forEach(function(btn) {
+    btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+  });
+}
+
+(function() {
+  var lang = localStorage.getItem('lang') || 'en';
+  applyLang(lang);
+
+  document.addEventListener('click', function(e) {
+    var btn = e.target.closest('.lang-btn');
+    if (btn) applyLang(btn.getAttribute('data-lang'));
+  });
+})();
